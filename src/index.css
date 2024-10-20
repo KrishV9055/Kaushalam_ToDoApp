@@ -1,0 +1,244 @@
+:root {
+  background: linear-gradient(99deg, rgb(255, 204, 0) 14.7%, rgb(255, 62, 58) 73%);
+  height: 100vh;
+}
+
+.app-heading {
+  font-size: 38px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  margin: auto;
+  padding: 1%;
+  width: 30%;
+  background-color: #fcb04cbc;
+}
+
+.app-todo-div {
+  padding-left: 25%;
+}
+
+.addToDo-form {
+  padding: 1%;
+  margin: 1% auto;
+}
+
+.addToDo-input {
+  font-size: 1.2rem;
+  padding: 1%;
+  margin: auto 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.addToDo-btn{
+  font-size: 1.2rem;
+  padding: 1%;
+  margin: 1%;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(34, 34, 34);
+}
+
+.todos-div {
+  font-size: 1.3rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 1% 1%;
+  width: 60%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 10px 10px 30px;
+  position: relative; 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: #ffee6a5f;
+}
+
+.todos-text {
+  max-width: 70%; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+}
+
+.todos-btn-span {
+  display: flex;
+  gap: 10px; 
+}
+
+.todos-remove-btn,
+.todos-edit-btn,
+.todos-complete-btn {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todos-remove-btn {
+  color: red;
+}
+
+.todos-remove-btn:hover {
+  color: rgb(173, 0, 0);
+}
+
+.todos-edit-btn {
+  color: rgb(0, 162, 255);
+}
+
+.todos-edit-btn:hover {
+  color: rgb(0, 106, 167);
+}
+
+.todos-complete-btn {
+  color: rgb(0, 255, 0);
+}
+
+.todos-complete-btn:hover {
+  color: rgb(0, 159, 0);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 50%; 
+  position: absolute;
+  right: -360px;
+  top: -10px; 
+  z-index: 1; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.edit-input {
+  font-size: 1.1rem;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-submit-btn, .edit-cancel-btn {
+  padding: 6px 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.edit-submit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-submit-btn:hover, .edit-cancel-btn:hover {
+  opacity: 0.9;
+}
+
+/* Tablet View */
+@media screen and (max-width: 800px) {
+  .app-heading {
+    font-size: 30px;
+    width: 50%; 
+  }
+
+  .addToDo-input, .addToDo-btn {
+    font-size: 1rem;
+    padding: 0.8%;
+  }
+
+  .todos-div {
+    width: 90%; 
+    padding: 10px 10px 10px 20px;
+  }
+
+  .todos-text {
+    max-width: 60%; 
+  }
+
+  .edit-form {
+    width: 80%; 
+    right: -20px; 
+    top: 20px;
+  }
+
+  .edit-input {
+    font-size: 1rem;
+  }
+
+  .edit-submit-btn, .edit-cancel-btn {
+    font-size: 0.9rem; 
+  }
+
+  .app-todo-div {
+    padding-left: 10%;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 400px) {
+  .app-heading {
+    font-size: 24px;
+    width: 70%;
+    padding: 5%;
+  }
+
+  .addToDo-input, .addToDo-btn {
+    font-size: 0.9rem;
+    padding: 0.6%;
+  }
+
+  .todos-div {
+    width: 100%;
+    padding: 8px 8px 8px 15px;
+  }
+
+  .todos-text {
+    max-width: 50%; 
+  }
+
+  .todos-btn-span {
+    gap: 5px; 
+  }
+
+  .edit-form {
+    width: 100%;
+    right: 0;
+    top: 20px;
+  }
+
+  .edit-input {
+    font-size: 0.9rem;
+  }
+
+  .edit-submit-btn, .edit-cancel-btn {
+    font-size: 0.85rem;
+  }
+
+  .app-todo-div {
+    padding-left: 5%;
+  }
+}
